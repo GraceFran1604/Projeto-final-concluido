@@ -1,0 +1,297 @@
+.menu-bg
+
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+
+    --tipo-letra: "Nunito", Helvetica, arial, sans-sarif;
+    --verde-escuro: #049A40;
+    --verde-claro: #0BF96A;
+    --rosa-escuro: #cd56db;
+    --branco: #fff;
+    --preto: black;
+    
+}
+body{
+    background-color: var(--branco);
+    font-family: var(--tipo-letra);
+}
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+}
+.menu-bg{
+    background-color: var(--verde-claro);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.menu_logo{
+    display: flex;
+    align-items: center;
+
+}
+.menu_logo h1{
+    color: #fff;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav .nav_lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 15px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.nav-item1{
+    margin: 0 250px;
+   display: block;
+}
+
+.nav_link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: rgb(24, 10, 221);
+    font-weight: 400;
+}
+.container{
+    justify-content: space-around;
+
+}
+.mobile-menu-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display:-webkit-flex;
+    }
+
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
+}
+
+.intro{
+
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0;
+
+}
+hr{
+    border: none;
+    background-color: var(--verde-claro);
+    height: 2px;
+    width: 140px;
+    margin: 20px auto;
+}
+p{
+    line-height: 21.82px; /* o espaçamento entre paragrafo*/
+    padding: 0 10px;
+}
+.sessao_titulo {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.sobre {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.somos_corpo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.somos_texto{
+
+    flex: 6 1 160px;
+}
+
+.somos_imagem {
+    flex: 1 1 350px;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* Nossos Cursos*/
+.curso_corpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+
+.Organizar{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vantagem{
+    max-width: 240px;
+    margin: px;
+}
+
+.vantagem_titulo{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.vantagem_titulo::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+/* Contacto*/
+.Organizar{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Contacto{
+    max-width: 240px;
+    margin: px;
+}
+
+.vantagem_titulo{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.vantagem_titulo::before{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+
+
+
+ul{
+    list-style: none;
+}
+
+
+
+
+/* Vantagens*/
+
+.vantagens{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vantagem{
+    max-width: 960px;
+    margin: px;
+    justify-content: center;
+}
+
+.vantagem_titulo{
+    font-size: 1.7rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.vantagem_titulo::before{
+    content: "";
+    display: inline-flexbox;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+
+
+
+.footer{
+    background-color: var(--rosa-escuro);
+    display: flex;
+    justify-content: center;
+    padding: 55px calc( (100% - 960px)/2);
+
+
+}
+
+.footer_copyright, .footer_logo{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
